@@ -1,36 +1,54 @@
 #container {
     display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
 }
-body {
-    display: grid;
-    grid-template-columns: 35% auto 35%;
-    grid-template-rows: 15% 85%;
-}
+
 nav {
+    padding:15px;
     background-color: azure;
-    flex: 0 1 20%;
+    flex-grow: 1;
+    text-align: center;
+    justify-items:right;
 }
 main {
+    padding:15px;
     background-color: aqua;
-    flex: 0 1 60%;
+    flex: 0 1 40%;
 }
 aside {
+    padding:15px;
     background-color:darkgray;
-    flex: 0 1 20%;
+    flex: 0 1 60%;
 }
 header {
-    background-color: black;
+    background-color: #170f5a;
+    display:flex;
+    margin:0;
+    font-size: 30pt;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+footer {
+    background-color: #170f5a;
+    display:flex;
+    margin:0;
+    font-size: 30pt;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .menu-nav a {
-    display: inline-block;
-    color:darkslateblue;
-    text-align: center;
+    display: block;
+    color:black;
+    text-align: left;
     padding: 10px;
     font-size: 20px;
     border-radius: 5px;
+    text-decoration: none;
+    flex: 0 1 10%;
 }
 
 .menu-nav a:hover{
@@ -39,6 +57,52 @@ header {
 }
 
 .menu-nav a.active{
-    background-color: blue;
+    background-color: dodgerblue;
     color:black;
 }
+
+.calendar-header,
+.calendar-grid {
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:5px;
+}
+.calendar-header{
+    margin-bottom:10px;
+}
+.weekday,
+.date {
+    text-align:center;
+    padding:10px;
+    border:1px solid #eee;
+}
+.date-empty {
+    visibility:hidden;
+}
+.calendar {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow:hidden;
+}
+.weekday {
+    background-color: #f0f0f0;
+    font-weight: bold;
+    color: #555;
+    border-bottom:none;
+}
+.date {
+    min-height: 80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-content:flex-end;
+    position:relative;
+    background-color: #fff;
+}
+.date:hover {
+    background-color: #f9f9f9;
+}
+
