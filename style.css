@@ -1,0 +1,44 @@
+#container {
+    display: flex;
+}
+body {
+    display: grid;
+    grid-template-columns: 35% auto 35%;
+    grid-template-rows: 15% 85%;
+}
+nav {
+    background-color: azure;
+    flex: 0 1 20%;
+}
+main {
+    background-color: aqua;
+    flex: 0 1 60%;
+}
+aside {
+    background-color:darkgray;
+    flex: 0 1 20%;
+}
+header {
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-nav a {
+    display: inline-block;
+    color:darkslateblue;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.menu-nav a:hover{
+    background-color: #741818;
+    color:black;
+}
+
+.menu-nav a.active{
+    background-color: blue;
+    color:black;
+}
