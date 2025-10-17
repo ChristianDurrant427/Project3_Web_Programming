@@ -18,90 +18,94 @@ especially as someone who never has worked in HTML. However this assignment was 
 useful skills that I will be able to use in future projects. 
  
 -->
-
-   
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Mrs. Durrant's Webpage</title>
-   
-   
-        <header>Welcome to our 5th Grade Class!</header>
+<body data-new-gr-c-s-check-loaded="14.1258.0" data-gr-ext-installed=""><header>Welcome to our 5th Grade Class!</header>
         <div id="#container" width="99%" height="99%">
-            <div id="LHMenu" width="200px" height="99%">
+            <div id="LHMenu" width="100px" height="99%">
                 <table class="LHStyle" width="99%">
-                    <tr class="LHStyle"><td class="LHStyle" id = "home" onclick="show('Home','HomePart')">Home</td></tr>
-                    <tr class="LHStyle"><td class="LHStyle" id = "contact" onclick="show('Contact','ContactPart')">Contact</td></tr>
-                    <tr class="LHStyle"><td class="LHStyle" id = "calendar" onclick="show('Calendar','CalendarPart')">Calendar</td></tr>
-                </table>
+                    <tbody><tr class="LHStyle"><td class="LHStyle" id="home" onclick="show('Home','HomePart')">Home</td></tr>
+                    <tr class="LHStyle"><td class="LHStyle" id="contact" onclick="show('Contact','ContactPart')">Contact</td></tr>
+                    <tr class="LHStyle"><td class="LHStyle" id="calendar" onclick="show('Calendar','CalendarPart')">Calendar</td></tr>
+                </tbody></table>
             </div>
             <div id="Content" width="99%" float="right" height="99%">
-                <div id="Home" hidden="true"></div>
-                <div id="Contact" hidden="true"></div>
-                <div id="XYZ" hidden="true"></div>
-            </div>
-        </div>
-        <div id="#container">
-            <div id="#calendar" class="calendar">
-                <div class="calendar-header">
-                    <div class="weekday">Sunday</div>
-                    <div class="weekday">Monday</div>
-                    <div class="weekday">Tuesday</div>
-                    <div class="weekday">Wednesday</div>
-                    <div class="weekday">Thursday</div>
-                    <div class="weekday">Friday</div>
-                    <div class="weekday">Saturday</div>
+                <div id="Home">
+                    <!--Put a few pictures here-->
+                    <!--Text from the about me page-->
+                    <h1> All About Mrs. Aeva!</h1>
+                    <img id="concertPic" src="../Project3_Web_Programming/concertPic.jpg" alt="Concert Pic not displaying" class="imgleftstyle">
+                    <img id="profilePic" src="../Project3_Web_Programming/profilePic.jpg" alt="Profile Pic not displaying" class="imgcenterstyle">
+                    <img id="mirrorPicture" src="../Project3_Web_Programming/mirrorPicture.jpg" alt="Mirror Pic is not displaying" class="imgrightstyle">
+                    <p style="text-align: center;"> My name is Aeva Durrant! I grew up in Payson, Utah. I graduated from Payson High School in 2021. 
+                        After high school, I went to Snow College for 2 years and got my A.S. degree. I then came to UVU to study Elementary Education. 
+                        I’ve been married for close to 2 years now, to my high school sweetheart! I love Disney, I love to go there, it’s my happy place. 
+                        I am a Disney Adult/ nerd through and through. I love Star Wars, playing DnD, and musicals, like I said, I’m a pretty big nerd.
+                        I’m also a fine arts kid! Throughout high school, I was in choir, orchestra, GO VIOLAS!, and theatre. 
+                        I was always on stage, and I love trying to take opportunities to perform, especially doing theatre.</p>
+                    <img id="couplesPic" src="../Project3_Web_Programming/couplesPic.JPG" alt="Couples Pic is not displaying" class="imgcenterstyle">
+                    <p style="text-align: right;">“Some say I’m balancing the Earth, but sad to say I’m just hanging on!-Ngendei the EarthBalancer</p>
+                    <ul>
+                        <em>Favorites:</em>
+                        <li>Color: Pink</li>
+                        <li>Food: Italian</li>
+                        <li>Drink: Dr. Pepper & Pink Lemonade</li>
+                        <li>Sport: Dance & Swimming (to watch football)</li>
+                        <li>Animal: Jaguar</li>
+                        <li>Movie: Tangled</li>
+                    </ul>
                 </div>
-                <div class="calendar-grid">
-                    <div class="date">1</div>
-                    <div class="date">2</div>
-                    <div class="date">3</div>
-                    <div class="date">4</div>
-                    <div class="date">5</div>
-                    <div class="date">6</div>
-                    <div class="date">7</div>
-                    <div class="date">8</div>
-                    <div class="date">9</div>
-                    <div class="date">10</div>
-                    <div class="date">11</div>
-                    <div class="date">12</div>
-                    <div class="date">13</div>
-                    <div class="date">14</div>
-                    <div class="date">15</div>
-                    <div class="date">16</div>
-                    <div class="date">17</div>
-                    <div class="date">18</div>
-                    <div class="date">19</div>
-                    <div class="date">20</div>
-                    <div class="date">21</div>
-                    <div class="date">22</div>
-                    <div class="date">23</div>
-                    <div class="date">24</div>
-                    <div class="date">25</div>
-                    <div class="date">26</div>
-                    <div class="date">27</div>
-                    <div class="date">28</div>
-                    <div class="date">29</div>
-                    <div class="date">30</div>
+                <div id="#contact" hidden="true">
+                    <!--Put a picture here-->
+                    <li>How to contact me!</li>
+                    <li>Email: fakeemail1234@gmail.com</li>
+                    <li>Phone number: 801-111-1111</li>
+                    <li>Or write up a question here and I'll get to it when I can! <a href="https://forms.gle/jTCW8Yu51NKi5Mxr8">Google Form</a></li>
+                </div>
+                <div id="#calendar" class="calendar" hidden="true">
+                    <div class="calendar-header">
+                        <div class="weekday">Sunday</div>
+                        <div class="weekday">Monday</div>
+                        <div class="weekday">Tuesday</div>
+                        <div class="weekday">Wednesday</div>
+                        <div class="weekday">Thursday</div>
+                        <div class="weekday">Friday</div>
+                        <div class="weekday">Saturday</div>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="date">1</div>
+                        <div class="date">2</div>
+                        <div class="date">3</div>
+                        <div class="date">4</div>
+                        <div class="date">5</div>
+                        <div class="date">6</div>
+                        <div class="date">7</div>
+                        <div class="date">8</div>
+                        <div class="date">9</div>
+                        <div class="date">10</div>
+                        <div class="date">11</div>
+                        <div class="date">12</div>
+                        <div class="date">13</div>
+                        <div class="date">14</div>
+                        <div class="date">15</div>
+                        <div class="date">16</div>
+                        <div class="date">17</div>
+                        <div class="date">18</div>
+                        <div class="date">19</div>
+                        <div class="date">20</div>
+                        <div class="date">21</div>
+                        <div class="date">22</div>
+                        <div class="date">23</div>
+                        <div class="date">24</div>
+                        <div class="date">25</div>
+                        <div class="date">26</div>
+                        <div class="date">27</div>
+                        <div class="date">28</div>
+                        <div class="date">29</div>
+                        <div class="date">30</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="#container">
-            <div id="#contact">
-                <li>This is some filler contact info!</li>
-                <li>This is some filler contact info!</li>
-                <li>This is some filler contact info!</li>
-                <li>This is some filler contact info!</li>
-                <li>This is some filler contact info!</li>
-            </div>
-        </div>
-        <footer>That's All Folks!</footer>
-
-
-
-
-
-
-
-
+    </div>
+    <footer>That's All Folks!</footer>
 </body>
 
 
