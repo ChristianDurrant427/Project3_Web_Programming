@@ -1,26 +1,26 @@
 // Decide what pane to show based on selected LH menu
-function show(activeID, ) {
+function show(activeID, id) {
 
-    var homePage = document.getElementById('Home')
-    var contactPage = document.getElementById('Contact')
-    var calendarPage = document.getElementById('Calendar')
+    var menuItemHome = document.getElementById('Home');
+    var menuItemContact = document.getElementById('Contact');
+    var menuItemCalendar = document.getElementById('Calendar');
 
 
 
     if (activeID === 'Home') {
-        homePage.style.backgroundColor = '#1e90ff'
-        contactPage.style.backgroundColor = '#f2f2f2'
-        calendarPage.style.backgroundColor = '#FFFFFF'
+        menuItemHome.style.backgroundColor = '#1e90ff';
+        menuItemContact.style.backgroundColor = '#f2f2f2';
+        menuItemCalendar.style.backgroundColor = '#FFFFFF';
 
     } else if (activeID === 'Contact'){
-        homePage.style.backgroundColor = '#FFFFFF'
-        contactPage.style.backgroundColor = '#f2f2f2'
-        calendarPage.style.backgroundColor = '#1e90ff'
+        menuItemHome.style.backgroundColor = '#FFFFFF';
+        menuItemContact.style.backgroundColor = '#f2f2f2';
+        menuItemCalendar.style.backgroundColor = '#1e90ff';
 
     } else if (activeID === 'Calendar'){
-        homePage.style.backgroundColor = '#FFFFFF'
-        contactPage.style.backgroundColor = '#1e90ff'
-        calendarPage.style.backgroundColor = '#f2f2f2'
+        menuItemHome.style.backgroundColor = '#FFFFFF';
+        menuItemContact.style.backgroundColor = '#1e90ff';
+        menuItemCalendar.style.backgroundColor = '#f2f2f2';
 
     } 
     var controller = getDocumentById('HomePart');
@@ -32,7 +32,7 @@ function show(activeID, ) {
     var controller = getDocumentById('CalendarPart');
     controller.setProperty('hidden',1);
 
-    var controller = zenPage.getComponentById(id);
+    var controller = getDocumentById(id);
     controller.setProperty('hidden',0);
 
 }

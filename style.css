@@ -23,11 +23,28 @@
 #LHMenu {
     padding: 10px;
 }
+p {
+    font-size: 15pt;
+    color:deeppink
+    
+}
 h1 {
     padding: 10px;
     color: #de2b2b;
+    text-align: center;
+    font-size: 30pt;
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+em {
+    font-weight:bold;
+    font-size:20pt;
+    
+}
+ul >li {
+    color: deeppink;
+    text-align: left;
+    font-size: 15pt;
 }
 li {
     text-align:center;
