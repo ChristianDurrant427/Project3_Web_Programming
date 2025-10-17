@@ -9,30 +9,30 @@ function show(activeID, id) {
 
     if (activeID === 'Home') {
         menuItemHome.style.backgroundColor = '#1e90ff';
-        menuItemContact.style.backgroundColor = '#f2f2f2';
+        menuItemContact.style.backgroundColor = '#FFFFFF';
         menuItemCalendar.style.backgroundColor = '#FFFFFF';
 
     } else if (activeID === 'Contact'){
         menuItemHome.style.backgroundColor = '#FFFFFF';
-        menuItemContact.style.backgroundColor = '#f2f2f2';
-        menuItemCalendar.style.backgroundColor = '#1e90ff';
+        menuItemContact.style.backgroundColor = '#1e90ff'
+        menuItemCalendar.style.backgroundColor = '#FFFFFF';
 
     } else if (activeID === 'Calendar'){
         menuItemHome.style.backgroundColor = '#FFFFFF';
-        menuItemContact.style.backgroundColor = '#1e90ff';
-        menuItemCalendar.style.backgroundColor = '#f2f2f2';
+        menuItemContact.style.backgroundColor = '#FFFFFF';
+        menuItemCalendar.style.backgroundColor = '#1e90ff';
 
     } 
-    var controller = getDocumentById('HomePart');
+    var controller = getElementById('HomePart');
     controller.setProperty('hidden',1);
 
-    var controller = getDocumentById('ContactPart');
+    var controller = getElementById('ContactPart');
     controller.setProperty('hidden',1);
 
-    var controller = getDocumentById('CalendarPart');
+    var controller = getElementById('CalendarPart');
     controller.setProperty('hidden',1);
 
-    var controller = getDocumentById(id);
+    var controller = getElementById(id);
     controller.setProperty('hidden',0);
 
 }
