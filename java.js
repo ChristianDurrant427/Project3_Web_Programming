@@ -24,15 +24,15 @@ function show(activeID, id) {
 
     } 
     var controller = document.getElementById('HomePart');
-    controller.setProperty('hidden',1);
+    controller.style.setProperty('hidden',1);
 
     var controller = document.getElementById('ContactPart');
-    controller.setProperty('hidden',1);
+    controller.style.setProperty('hidden',1);
 
     var controller = document.getElementById('CalendarPart');
-    controller.setProperty('hidden',1);
+    controller.style.setProperty('hidden',1);
 
     var controller = document.getElementById(id);
-    controller.setProperty('hidden',0);
+    controller.style.setProperty('hidden',0);
 
 }

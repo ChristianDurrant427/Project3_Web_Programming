@@ -5,6 +5,14 @@ nav {
     position: fixed;
     color:black;
 }
+blockquote {
+    text-align: center; 
+    font-size:30px;
+    background-color: #4f96d5;
+    border: 4px, solid, aquamarine;
+    border-radius: 15px;
+    color:black;
+}
 #home {
     display: flex;
     flex-wrap: wrap;
@@ -35,7 +43,7 @@ nav {
 }
 p {
     font-size: 15pt;
-    color:deeppink
+    color:#c20e0e
     
 }
 h1 {
@@ -52,25 +60,28 @@ em {
     
 }
 ul >li {
-    color: deeppink;
+    color: #c20e0e;
     text-align: left;
     font-size: 15pt;
 }
 li {
     text-align:center;
     padding: 5px;
-    color: #de2b2b;
+    color: #c20e0e;
     font-size: 25px;
 }
 ul {
     text-align: left;
     padding: 10px;
 }
-
+body {
+    background-color: #0c60cb;
+}
 main {
-    background-color: azure;
+    background-color: #88cfcf;
     justify-content: center;
     flex: 0 1 60%;
+    padding: 30px;
 }
 
 header {
@@ -88,6 +99,12 @@ footer {
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.imperial-script-regular {
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .calendar-header,
 .calendar-grid {
     display:grid;
