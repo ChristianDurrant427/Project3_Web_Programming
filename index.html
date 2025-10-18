@@ -23,19 +23,20 @@ Reflection:
         <title>Mrs. Durrants Webpage</title>
     </head>
     <body>
-        <header>Welcome to our 5th Grade Class!</header>
-        <div id="#container" width="99%" height="99%">
-            <div id="LHMenu" width="100px" height="99%">
+        <header>Welcome to our 5th Grade Class!
+            <nav id="LHMenu" width="100px" height="99%">
                 <table class="LHStyle" width="99%">
-                    <tbody><tr class="LHStyle"><td class="LHStyle" id="Home" onclick="show('Home','HomePart')" style="background-color: rgb(255, 255, 255);">Home</td></tr>
-                    <tr class="LHStyle"><td class="LHStyle" id="Contact" onclick="show('Contact','ContactPart')" style="background-color: rgb(30, 144, 255);">Contact</td></tr>
+                    <tbody><tr class="LHStyle"><td class="LHStyle" id="Home" onclick="show('Home','HomePart')" style="background-color: rgb(30, 144, 255);">Home</td></tr>
+                    <tr class="LHStyle"><td class="LHStyle" id="Contact" onclick="show('Contact','ContactPart')" style="background-color: rgb(255, 255, 255);">Contact</td></tr>
                     <tr class="LHStyle"><td class="LHStyle" id="Calendar" onclick="show('Calendar','CalendarPart')" style="background-color: rgb(255, 255, 255);">Calendar</td></tr>
                 </tbody></table>
-            </div>
-            <div id="Content" width="99%" float="right" height="99%">
+            </nav>
+        </header>
+        <div id="container" height="99%">
+            <main height="99%">
                 <div id="HomePart">
                     <h1> All About Mrs. Aeva!</h1>
-                    <div id="#container">
+                    <div id="container">
                         <img id="concertPic" src="/concertPic.jpg" alt="Concert Pic not displaying" class="imgstyle">
                         <img id="profilePic" src="/profilePic.jpg" alt="Profile Pic not displaying" class="imgstyle">
                         <img id="mirrorPicture" src="/mirrorPicture.jpg" alt="Mirror Pic is not displaying" class="imgstyle">
@@ -109,7 +110,7 @@ Reflection:
                         <div class="date">30</div>
                     </div>
                 </div>
-            </div>
+            </main>
         </div>
         <footer>That's All Folks!</footer>
     </body>

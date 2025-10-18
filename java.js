@@ -23,16 +23,16 @@ function show(activeID, id) {
         menuItemCalendar.style.backgroundColor = '#1e90ff';
 
     } 
-    var controller = getElementById('HomePart');
+    var controller = document.getElementById('HomePart');
     controller.setProperty('hidden',1);
 
-    var controller = getElementById('ContactPart');
+    var controller = document.getElementById('ContactPart');
     controller.setProperty('hidden',1);
 
-    var controller = getElementById('CalendarPart');
+    var controller = document.getElementById('CalendarPart');
     controller.setProperty('hidden',1);
 
-    var controller = getElementById(id);
+    var controller = document.getElementById(id);
     controller.setProperty('hidden',0);
 
 }

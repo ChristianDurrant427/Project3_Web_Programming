@@ -1,3 +1,10 @@
+nav {
+    background-color: azure;
+    flex:0 1 10%;
+    float:left;
+    position: fixed;
+    color:black;
+}
 #home {
     display: flex;
     flex-wrap: wrap;
@@ -18,10 +25,13 @@
 }
 #container {
     display:flex;
-    justify-content:space-evenly;
+    justify-content:center;
 }
 #LHMenu {
     padding: 10px;
+    display:flex;
+    height: auto;
+    
 }
 p {
     font-size: 15pt;
@@ -56,26 +66,15 @@ ul {
     text-align: left;
     padding: 10px;
 }
-nav {
-    padding:15px;
-    background-color: azure;
-    flex-grow: 1;
-    text-align: center;
-    justify-items:right;
-}
+
 main {
-    padding:15px;
-    background-color: aqua;
-    flex: 0 1 40%;
-}
-aside {
-    padding:15px;
-    background-color:darkgray;
+    background-color: azure;
+    justify-content: center;
     flex: 0 1 60%;
 }
+
 header {
     background-color: #170f5a;
-    display:flex;
     margin:0;
     font-size: 30pt;
     color: white;
@@ -84,7 +83,6 @@ header {
 }
 footer {
     background-color: #170f5a;
-    display:flex;
     margin:0;
     font-size: 30pt;
     color: white;
@@ -135,7 +133,8 @@ footer {
     background-color: #f9f9f9;
 }
 .imgstyle {
-    width: 400px;
+    width: 440px;
+    flex-wrap:wrap;
     height: auto;
     margin: 0 auto;
     display: block;
@@ -162,11 +161,8 @@ td:hover {
 
 table.LHStyle th, 
 table.LHStyle td {
-  text-align: left;
   font-family: Sans-serif;
   padding: 16px;
-}
-tr.LHStyle:nth-child(even) {
-  background-color: #f2f2f2;
-
+    text-align:center;
+    font-size:15px;
 }
