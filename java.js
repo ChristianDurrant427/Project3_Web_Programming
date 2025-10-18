@@ -24,15 +24,35 @@ function show(activeID, id) {
 
     } 
     var controller = document.getElementById('HomePart');
-    controller.style.setProperty('hidden',1);
+    controller.style.setProperty('display','none');
 
     var controller = document.getElementById('ContactPart');
-    controller.style.setProperty('hidden',1);
+    controller.style.setProperty('display','none');
 
     var controller = document.getElementById('CalendarPart');
-    controller.style.setProperty('hidden',1);
+    controller.style.setProperty('display','none');
 
     var controller = document.getElementById(id);
-    controller.style.setProperty('hidden',0);
+    controller.style.setProperty('display','block');
 
+    var modal = document.getElementById("ImageModal");
 }
+
+img.onclick = function(id) {
+    var img = document.getElementById(id)
+    var modalIMG = document.getElementById(id)
+    modal.style.display = "block";
+    modalIMG.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementById("close")[0];
+
+span.onclick = function() {
+    modal.style.display = "none"
+}
+
+body.onclick = function() {
+    modal.style.display = "none"
+}
+

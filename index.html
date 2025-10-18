@@ -25,19 +25,19 @@ Reflection:
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&amp;display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body data-new-gr-c-s-check-loaded="14.1258.0" data-gr-ext-installed="">
         <header>Welcome to our 5th Grade Class!
             <nav id="LHMenu" width="100px" height="99%">
                 <table class="LHStyle" width="99%">
                     <tbody><tr class="LHStyle"><td class="LHStyle" id="Home" onclick="show('Home','HomePart')" style="background-color: rgb(255, 255, 255);">Home</td></tr>
-                    <tr class="LHStyle"><td class="LHStyle" id="Contact" onclick="show('Contact','ContactPart')" style="background-color: rgb(255, 255, 255);">Contact</td></tr>
-                    <tr class="LHStyle"><td class="LHStyle" id="Calendar" onclick="show('Calendar','CalendarPart')" style="background-color: rgb(30, 144, 255);">Calendar</td></tr>
+                    <tr class="LHStyle"><td class="LHStyle" id="Contact" onclick="show('Contact','ContactPart')" style="background-color: rgb(30, 144, 255);">Contact</td></tr>
+                    <tr class="LHStyle"><td class="LHStyle" id="Calendar" onclick="show('Calendar','CalendarPart')" style="background-color: rgb(255, 255, 255);">Calendar</td></tr>
                 </tbody></table>
             </nav>
         </header>
-        <div id="container" height="99%">
-            <main height="99%">
-                <div id="HomePart">
+        <div id="container">
+            <main>
+                <div id="HomePart" class="hidden-div" style="display: none;">
                     <h1> All About Mrs. Aeva!</h1>
                     <div id="container">
                         <img id="concertPic" src="/concertPic.jpg" alt="Concert Pic not displaying" class="imgstyle">
@@ -52,8 +52,8 @@ Reflection:
                         I was always on stage, and I love trying to take opportunities to perform, especially doing theatre.</p>
                     <img id="couplesPic" src="/couplesPic.JPG" alt="Couples Pic is not displaying" class="imgstyle" style="float: right;"><br><br><br><br>
                     
-                    <blockquote class="imperial-script-regular">“Some say I’m balancing the Earth, but sad to say I’m just hanging on!<br>
-                        -Ngendei the Earth Balancer</blockquote>
+                    <p class="imperial-script-regular"><span>“Some say I’m balancing the Earth, but sad to say I’m just hanging on!
+                        -Ngendei the Earth Balancer</span></p>
                     <ul>
                         <em>Favorites:</em>
                         <li>Color: Pink</li>
@@ -64,54 +64,56 @@ Reflection:
                         <li>Movie: Tangled</li>
                     </ul>
                 </div>
-                <div id="ContactPart" hidden="true">
+                <div id="ContactPart" class="hidden-div" style="display: block;">
                     <!--Put a picture here-->
-                    <li>How to contact me!</li>
-                    <li>Email: fakeemail1234@gmail.com</li>
-                    <li>Phone number: 801-111-1111</li>
-                    <li>Or write up a question here and I'll get to it when I can! <a href="https://forms.gle/jTCW8Yu51NKi5Mxr8">Google Form</a></li>
+                    <p class="contactinfo">How to contact me!</p>
+                    <p class="contactinfo">Email: fakeemail1234@gmail.com</p>
+                    <p class="contactinfo">Phone number: 801-111-1111</p>
+                    <p class="contactinfo">Or write up a question here and I'll get to it when I can! <a href="https://forms.gle/jTCW8Yu51NKi5Mxr8">Google Form</a></p>
                 </div>
-                <div id="CalendarPart" class="calendar" hidden="true">
-                    <div class="calendar-header">
-                        <div class="weekday">Sunday</div>
-                        <div class="weekday">Monday</div>
-                        <div class="weekday">Tuesday</div>
-                        <div class="weekday">Wednesday</div>
-                        <div class="weekday">Thursday</div>
-                        <div class="weekday">Friday</div>
-                        <div class="weekday">Saturday</div>
-                    </div>
-                    <div class="calendar-grid">
-                        <div class="date">1</div>
-                        <div class="date">2</div>
-                        <div class="date">3</div>
-                        <div class="date">4</div>
-                        <div class="date">5</div>
-                        <div class="date">6</div>
-                        <div class="date">7</div>
-                        <div class="date">8</div>
-                        <div class="date">9</div>
-                        <div class="date">10</div>
-                        <div class="date">11</div>
-                        <div class="date">12</div>
-                        <div class="date">13</div>
-                        <div class="date">14</div>
-                        <div class="date">15</div>
-                        <div class="date">16</div>
-                        <div class="date">17</div>
-                        <div class="date">18</div>
-                        <div class="date">19</div>
-                        <div class="date">20</div>
-                        <div class="date">21</div>
-                        <div class="date">22</div>
-                        <div class="date">23</div>
-                        <div class="date">24</div>
-                        <div class="date">25</div>
-                        <div class="date">26</div>
-                        <div class="date">27</div>
-                        <div class="date">28</div>
-                        <div class="date">29</div>
-                        <div class="date">30</div>
+                <div id="CalendarPart" class="hidden-div" style="display: none;">
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <div class="weekday">Sunday</div>
+                            <div class="weekday">Monday</div>
+                            <div class="weekday">Tuesday</div>
+                            <div class="weekday">Wednesday</div>
+                            <div class="weekday">Thursday</div>
+                            <div class="weekday">Friday</div>
+                            <div class="weekday">Saturday</div>
+                        </div>
+                        <div class="calendar-grid">
+                            <div class="date">1</div>
+                            <div class="date">2</div>
+                            <div class="date">3</div>
+                            <div class="date">4</div>
+                            <div class="date">5</div>
+                            <div class="date">6</div>
+                            <div class="date">7</div>
+                            <div class="date">8</div>
+                            <div class="date">9</div>
+                            <div class="date">10</div>
+                            <div class="date">11</div>
+                            <div class="date">12</div>
+                            <div class="date">13</div>
+                            <div class="date">14</div>
+                            <div class="date">15</div>
+                            <div class="date">16</div>
+                            <div class="date">17</div>
+                            <div class="date">18</div>
+                            <div class="date">19</div>
+                            <div class="date">20</div>
+                            <div class="date">21</div>
+                            <div class="date">22</div>
+                            <div class="date">23</div>
+                            <div class="date">24</div>
+                            <div class="date">25</div>
+                            <div class="date">26</div>
+                            <div class="date">27</div>
+                            <div class="date">28</div>
+                            <div class="date">29</div>
+                            <div class="date">30</div>
+                        </div>
                     </div>
                 </div>
             </main>
